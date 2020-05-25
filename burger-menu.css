@@ -34,17 +34,41 @@
 
 .header__link {
   color: azure;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
   margin-left: 13px;
+}
+
+.content {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (min-width: 1281px) {
+  .content {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .content {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 961px) {
+  .content {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 767px) {
   .header__burger {
     display: block;
     position: relative;
-    width: 15px;
+    width: 10px;
     height: 20px;
     padding-left: 15px;
     z-index: 2;
@@ -88,5 +112,30 @@
   }
   .header__list li {
     margin: 0px 0px 10px 0px;
+  }
+  .content {
+    position: relative;
+    font-size: 16px;
+    text-align: right;
+    color: #f8fcfb;
+    margin: -20px 0px 0px 0px;
+  }
+}
+
+@media (min-width: 641px) {
+  .content {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 481px) {
+  .content {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 320px) {
+  .content {
+    font-size: 18px;
   }
 }
