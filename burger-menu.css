@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: block;
+  height: 60px;
+  background-color: #226856;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #2f4956;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__list {
+  display: flex;
+  list-style: none;
+  padding-top: 22px;
+  position: relative;
+}
+
+.header__link {
+  color: azure;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 13px;
+}
+
+.content {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 1365px) {
+  .content {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .content {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .content {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 899px) {
+  .content {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 10px;
+    height: 20px;
+    padding-left: 15px;
+    z-index: 2;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #e7fcfc;
+    width: 100%;
+    height: 2px;
+    top: 19px;
+  }
+  .header__burger:before,
+  .header__burger:after {
+    content: "";
+    background-color: #e7fcfc;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+  }
+  .header__burger:before {
+    top: 10px;
+  }
+  .header__burger:after {
+    bottom: -10px;
+  }
+  .header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #71a5a2;
+  }
+  .header::before {
+    height: 40px;
+    background-color: #386077;
+    z-index: 2;
+  }
+  .header__list {
+    display: block;
+  }
+  .header__list li {
+    margin: 0px 0px 10px 0px;
+  }
+  .content {
+    position: relative;
+    font-size: 16px;
+    text-align: right;
+    color: #f8fcfb;
+    margin: -20px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 666px) {
+  .content {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 567px) {
+  .content {
+    font-size: 12px;
+  }
+}
